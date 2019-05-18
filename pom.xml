@@ -5,7 +5,7 @@
 
   <groupId>com.liyao</groupId>
   <artifactId>testMaven</artifactId>
-  <version>4.0</version>
+  <version>4.0-SNAPSHOt</version>
   <name>testMaven</name>
   <dependencies>
       <dependency>
@@ -16,9 +16,9 @@
   </dependencies>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/miracle2138/java.git</developerConnection>
-        <url>scm:git:https://github.com/miracle2138/java.git</url>
-        <tag>testMaven-4.0</tag>
+        <developerConnection>scm:git:https://github.com/miracle2138/pro.git</developerConnection>
+        <url>scm:git:https://github.com/miracle2138/pro.git</url>
+        <tag>testMaven-3.0</tag>
     </scm>
 
 <build>
