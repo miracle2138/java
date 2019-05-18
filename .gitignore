@@ -1,6 +1,6 @@
 target
 testMaven.iml
-.idea/vcs.xml
+.idea/
 pom.xml.releaseBackup
 .idea/workspace.xml
 release.properties
