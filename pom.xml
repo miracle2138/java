@@ -5,7 +5,7 @@
 
   <groupId>com.liyao</groupId>
   <artifactId>testMaven</artifactId>
-  <version>3.0</version>
+  <version>3.0-SNAPSHOT</version>
   <name>testMaven</name>
   <dependencies>
       <dependency>
