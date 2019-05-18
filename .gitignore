@@ -3,4 +3,5 @@ testMaven.iml
 .idea/vcs.xml
 pom.xml.releaseBackup
 .idea/workspace.xml
+release.properties
 
