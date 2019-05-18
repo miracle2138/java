@@ -97,6 +97,8 @@
                 <useReleaseProfile>false</useReleaseProfile>
                 <autoVersionSubmodules>true</autoVersionSubmodules>
                 <preparationGoals>clean deploy</preparationGoals>
+                <username>miracle2138</username>
+                <password>Miracle8220761</password>
             </configuration>
         </plugin>
     </plugins>
