@@ -5,7 +5,7 @@
 
   <groupId>com.liyao</groupId>
   <artifactId>testMaven</artifactId>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>testMaven</name>
   <dependencies>
       <dependency>
@@ -36,69 +36,69 @@
             </archive>
         </configuration>
     </plugin>
-        <plugin>
-            <groupId>com.liyao</groupId>
-            <artifactId>xtgyr-maven-plugin</artifactId>
-            <version>1.0</version>
-            <executions>
-            <execution>
-            <id>123</id>
-            <phase>compile</phase>
-            <goals>
-                <goal>printWithP</goal>
-            </goals>
-                <!--<configuration>-->
-                    <!--<name>ff</name>-->
-                <!--</configuration>-->
-            </execution>
-                <execution>
-                    <id>456</id>
-                    <phase>compile</phase>
-                    <goals>
-                        <goal>print</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>copy-dependencies</id>
-                    <phase>prepare-package</phase>
-                    <goals>
-                        <goal>copy-dependencies</goal>
-                    </goals>
-                    <configuration>
-                        <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                        <overWriteReleases>false</overWriteReleases>
-                        <overWriteSnapshots>false</overWriteSnapshots>
-                        <overWriteIfNewer>true</overWriteIfNewer>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>8</source>
-                <target>8</target>
-            </configuration>
-        </plugin>
+        <!--<plugin>-->
+            <!--<groupId>com.liyao</groupId>-->
+            <!--<artifactId>xtgyr-maven-plugin</artifactId>-->
+            <!--<version>1.0</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>123</id>-->
+            <!--<phase>compile</phase>-->
+            <!--<goals>-->
+                <!--<goal>printWithP</goal>-->
+            <!--</goals>-->
+                <!--&lt;!&ndash;<configuration>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<name>ff</name>&ndash;&gt;-->
+                <!--&lt;!&ndash;</configuration>&ndash;&gt;-->
+            <!--</execution>-->
+                <!--<execution>-->
+                    <!--<id>456</id>-->
+                    <!--<phase>compile</phase>-->
+                    <!--<goals>-->
+                        <!--<goal>print</goal>-->
+                    <!--</goals>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
         <!--<plugin>-->
             <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<artifactId>maven-release-plugin</artifactId>-->
-            <!--<version>2.5.3</version>-->
+            <!--<artifactId>maven-dependency-plugin</artifactId>-->
+            <!--<executions>-->
+                <!--<execution>-->
+                    <!--<id>copy-dependencies</id>-->
+                    <!--<phase>prepare-package</phase>-->
+                    <!--<goals>-->
+                        <!--<goal>copy-dependencies</goal>-->
+                    <!--</goals>-->
+                    <!--<configuration>-->
+                        <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+                        <!--<overWriteReleases>false</overWriteReleases>-->
+                        <!--<overWriteSnapshots>false</overWriteSnapshots>-->
+                        <!--<overWriteIfNewer>true</overWriteIfNewer>-->
+                    <!--</configuration>-->
+                <!--</execution>-->
+            <!--</executions>-->
+        <!--</plugin>-->
+        <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-compiler-plugin</artifactId>-->
             <!--<configuration>-->
-                <!--<tagBase>https://github.com/miracle2138/pro.git</tagBase>-->
-                <!--<connectionUrl>https://github.com/miracle2138/pro.git</connectionUrl>-->
-                <!--<useReleaseProfile>false</useReleaseProfile>-->
-                <!--<autoVersionSubmodules>true</autoVersionSubmodules>-->
-                <!--<preparationGoals>clean deploy</preparationGoals>-->
+                <!--<source>8</source>-->
+                <!--<target>8</target>-->
             <!--</configuration>-->
         <!--</plugin>-->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+                <tagBase>https://github.com/miracle2138/pro.git</tagBase>
+                <connectionUrl>https://github.com/miracle2138/pro.git</connectionUrl>
+                <useReleaseProfile>false</useReleaseProfile>
+                <autoVersionSubmodules>true</autoVersionSubmodules>
+                <preparationGoals>clean deploy</preparationGoals>
+            </configuration>
+        </plugin>
     </plugins>
 </build>
 

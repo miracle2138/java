@@ -1,2 +1,4 @@
 target
 testMaven.iml
+.idea/vcs.xml
+pom.xml.releaseBackup
