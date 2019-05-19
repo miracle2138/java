@@ -17,8 +17,8 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/miracle2138/java.git</developerConnection>
-        <url>scm:git:https://github.com/miracle2138/java.git</url>
-      <tag>HEAD</tag>
+        <connection>scm:git:https://github.com/miracle2138/java.git</connection>
+        <tag>HEAD</tag>
   </scm>
 
 <build>
@@ -101,9 +101,6 @@
             <artifactId>maven-release-plugin</artifactId>
             <version>2.5.3</version>
             <configuration>
-                <tagBase>https://github.com/miracle2138/pro.git</tagBase>
-                <connectionUrl>https://github.com/miracle2138/pro.git</connectionUrl>
-                <useReleaseProfile>false</useReleaseProfile>
                 <autoVersionSubmodules>true</autoVersionSubmodules>
                 <preparationGoals>clean deploy</preparationGoals>
             </configuration>
