@@ -102,7 +102,7 @@
             <version>2.5.3</version>
             <configuration>
                 <autoVersionSubmodules>true</autoVersionSubmodules>
-                <preparationGoals>clean deploy</preparationGoals>
+                <preparationGoals>clean verify</preparationGoals>
             </configuration>
         </plugin>
     </plugins>
