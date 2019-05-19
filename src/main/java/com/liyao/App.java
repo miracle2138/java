@@ -26,7 +26,7 @@ public class App
         Predicate t3;
 
 
-        new App().tryParse((s)->Integer.parseInt(s), "999");
+        new App().tryParse((s)->Integer.parseInt(s), "9999");
 
     }
 
